@@ -1,0 +1,1352 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Urban Traffic Portal</title>
+
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <meta name="keywords" content="Traffic Rules, Traffic Safety Measures, Blockage Information, Reports on Traffics, Nigeria Rules
+          concerning traffics, Buy Traffic Safety Merchandise, Traffic Flags-prices, caps-prices, placards-prices, banners-prices," />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--// Meta tag Keywords -->
+
+    <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+
+    <!-- banner slider css file -->
+    <link href="css/JiSlider.css" rel="stylesheet">
+    <!-- //banner slider css file -->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+    <!-- //web-fonts -->
+    <!-- Angular js -->
+    <!-- //Angular js -->
+
+
+    <script src="Scripts/angular.js"></script>
+</head>
+
+<body ng-app="myApp" >
+
+    <!-- header -->
+    <header>
+
+        <div class="container">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="exampleModalLabel1">WELCOME !!!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    Kindly Please Enter Your First Name
+                                    at the top right.<span class="fa fa-arrow-right"></span>
+                                </label>
+                                <p class="text-warning">Thank You.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<script src="myCtrl.js"></script>-->
+            <nav class="navbar navbar-expand-lg navbar-light" data-spy="affix" data-offset="50">
+                <a class="navbar-brand" href="index.html" title="Urban Traffic Portal">
+
+                    <img src="images/nigerlogo.jpg" ng-mouseover="count = count + 1" width="50" height="100" style="padding-right: 20px;" />
+
+                    <script src="myCtrl.js"></script>
+
+
+                </a>
+                <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item active  mr-lg-3">
+                            <a class="nav-link" href="index.html">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown mr-lg-3">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Safety Measures
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#AM">Audio Message</a>
+                                <a class="dropdown-item" href="#VM">Video Message</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item  mr-lg-3">
+                            <a class="nav-link" href="#TRR">Traffic Rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#TR">Reports</a>
+                        </li>
+                        <li class="nav-item  mr-lg-3">
+                            <a class="nav-link" href="#TBI">Blockage Information</a>
+                        </li>
+
+
+                        <li class="nav-item  mr-lg-3">
+                            <a class="nav-link" href="#BTSM" title="BUY TRAFFIC SAFETY MEASURES MERCHANDISE">Buy TSM</a>
+                        </li>
+                    </ul>
+
+                    <input type="text" class="form-control" ng-model="firstname" placeholder="Enter First Name" />
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="text-uppercase pt-4 pb-3">Welcome : {{firstname}}<span>count:{{count}}</span></li>
+
+                    </ul>
+
+                </div>
+                <!--<script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function ($scope) {
+                $scope.name = "gyuguygud";
+            }
+            );
+        </script>-->
+
+            </nav>
+            
+        </div>
+    </header>
+    <div>
+        <h1 class="btn btn-warning">Urban Traffic Portal</h1>
+    </div>
+    <!-- //header -->
+    <!-- banner slider-->
+    <div class="banner-silder" id="">
+        <div id="JiSlider" class="jislider">
+            <ul>
+                <li>
+                    <div class="w3layouts-banner-top">
+                        <div class="bs-slider-overlay">
+                            <div class="container">
+                                <!-- Slide Text Layer -->
+                                <div class="w3l-slide-text text-center">
+                                    <h1 class="text-uppercase pt-4 pb-3">We're here to tell you about<br> the traffic rules system</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top1">
+                        <div class="bs-slider-overlay">
+                            <div class="container">
+                                <!-- Slide Text Layer -->
+                                <div class="w3l-slide-text text-center">
+                                    <h2 class="text-uppercase pt-4 pb-3">Always start your journey with a well balanced meal</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top2">
+                        <div class="bs-slider-overlay">
+                            <div class="container">
+                                <!-- Slide Text Layer -->
+                                <div class="w3l-slide-text text-center">
+                                    <h3 class="text-uppercase pt-4 pb-3">Always avoid over speeding <br> to save a life.</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top3">
+                        <div class="bs-slider-overlay">
+                            <div class="container">
+                                <!-- Slide Text Layer -->
+                                <div class="w3l-slide-text text-center">
+                                    <h3 class="text-uppercase pt-4 pb-3">Maintain your lane<br>while driving.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top4">
+                        <div class="bs-slider-overlay">
+                            <div class="container">
+                                <!-- Slide Text Layer -->
+                                <div class="w3l-slide-text text-center">
+                                    <h3 class="text-uppercase pt-4 pb-3">Always obey traffic rules <br> to avoid collision.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //banner slider -->
+    <!-- About  turned to Chisom Aspect-->
+    <section class="about py-5" id="SM">
+        <div class="container-fluid py-lg-5 py-3">
+            <h3 class="heading text-uppercase">Traffic Safety Measures</h3>
+            <div class="row about_grids">
+                <div class="col-lg-4 col-md-6 team_grid1">
+
+                    <p>Should you follow these simple rules below, the risk of involving in a traffic collision is surely minimized.</p>
+                    <p class="second_para">
+                        <ul>
+                            <li><b>Keep loyal to your side</b>:Stick to the right side of the road and allow other vehicles in the opposite direction to pass through. Don't drive in the middle of the street then be a victim of a tragic head-on accident!</li>
+
+                            <li><b>Keep calm and handle all turns and round about</b>:Needless to say, you have to slow down when approaching sharp turns or bends to avoid abrupt reactions.</li>
+
+                            <li><b>pay attention to traffic jams</b>:As the volume of vehicles during a traffic congestion is enormous, move slowly and carefully steer your wheels through the crowd.</li>
+
+                            <li><b>Never exceed the speed limit</b>:Everything exists for a reason, so does the speed limit. Check the regulation for speed limit in each type of route then conform to it. You don't want to be arrested either by police or Grim Reaper, right? </li>
+
+                            <li><b>Keep a safe distance</b>:With all vehicles around you, to be more exact. Most side or rear-end collisions happen as the safe distance between 2 vehicles is not maintained.</li>
+
+                            <li><b>Memorize and adhere to road signs</b>:This is of course a must for all. Check out  <a href="https://www.safetysign.com/road-symbol-signs">all types of road signs and their meanings in Nigeria.</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 about_img mt-md-0 mt-5 ">
+                    <div class="about_image">
+                        <img src="Chisom/road-safetyyyyy.jpg" alt="Road-Safety" class="img-fluid" />
+                    </div>
+                    <span style="padding-top:20px;"></span>
+                    <div class="about_image">
+                        <img src="Chisom/road-safetyyyyy.jpg" alt="Road-Safety" class="img-fluid" />
+                    </div>
+                    <div class="about_image" id="AM">
+                        <h2>This explains the audio aspect of safety measures</h2>
+                        <audio controls="controls">
+                            <source src="Chisom/AUDIO.mp3" type="audio/mpeg" />
+                        </audio>
+                        <!--<img src="Chisom/road-safetyyyyy.jpg" alt="Road-Safety" class="img-fluid" />-->
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-12 about-right mt-lg-0 mt-5 pl-lg-5">
+                    <div id="horizontalTab">
+                        <ul class="resp-tabs-list">
+                            <li><h3>Before leaving for a trip</h3></li>
+                            <li><h3>When you are on the road</h3></li>
+                            <li><h3>When parked</h3></li>
+                        </ul>
+                        <div class="resp-tabs-container">
+                            <div class="tab1">
+                                <h4 class="">
+                                    <ul>
+                                        <li>
+                                            Start any trip by getting enough sleep the night before-at
+                                            least six hours is recommended.
+                                        </li>
+
+                                        <li>Emotional stress or illness can also cause fatigue.</li>
+
+                                        <li>Plan your route, refueling, rests and overnight stops.</li>
+
+                                        <li>
+                                            Check your car's roadworthiness. Headlights, indicators,
+                                            stop lights, tail-lights, widescreen wiper blades, mirrors, brakes,
+                                            steering, tyres, tyre pressures, exhaust system and possible oil or fuel leaks.
+                                        </li>
+
+                                        <li>Check coolant, fluids and oil levels.</li>
+
+                                        <li>
+                                            Check that the spare wheel is in good condition and properly inflated.
+                                            Make sure that you have a serviceable jack and wheel brace.
+                                        </li>
+
+                                        <li>Ensure any luggage or cargo is put in the boot or secured in the vehicle.</li>
+
+                                        <li> Never transport flammable liquid in the vehicle. Plan your refueling stop.</li>
+                                    </ul>
+                                </h4>
+                            </div>
+                            <div class="tab2">
+                                <h4 class="">
+                                    <ul>
+                                        <li>Prevent sun glare and eye fatigue by wearing good quality sunglasses.</li>
+
+                                        <li>Avoid eating heavy food.</li>
+
+                                        <li>Do not consume any alcohol during your trip.</li>
+
+                                        <li>An overheated or very cold vehicle can compound the fatigue effects.</li>
+
+                                        <li>
+                                            If you can, have another person ride with you, so you will have someone
+                                            to talk to and who can share the driving
+                                        </li>
+
+                                        <li>Make sure that you rest when you are not driving.</li>
+
+                                        <li>Avoid driving during your body's downtime</li>
+
+                                        <li>Boredom can also cause fatigue. Music / radio / conversation is helpful.</li>
+
+                                        <li>Always use your seat belts.</li>
+                                    </ul>
+                                </h4>
+                            </div>
+                            <div class="tab3">
+                                <h4 class="">
+                                    <ul>
+                                        <li>Keep your car locked when unattended.</li>
+
+                                        <li>
+                                            Don't leave valuables inside the car where they can be seen by passers-by.
+                                            Lock such items in the boot.
+                                        </li>
+
+                                        <li>
+                                            Be especially careful when loading or unloading the boot that keys are
+                                            not locked inside the car.
+                                        </li>
+                                    </ul>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section class="contact py-5" id="VM">
+                <h1>The Following videos contains the traffic safety measures in Nigeria</h1>
+                <div class="container-fluid pt-lg-5">
+                    <div class="row contact-grids">
+                        <div class="col-lg-4 col-12 col-md-6 contact-form p-5">
+                            <h1 class="heading">Trafic Safety Video</h1>
+                            <video controls="controls" width="300" height="200">
+
+                                <source src="Chisom/sm1.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="col-lg-4 col-md-6 contact-form p-5">
+                            <h4 class="heading">How to avoid Lagos Traffic</h4>
+                            <video controls="controls" width="300" height="200">
+                                <source src="Chisom/sm2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="col-lg-4 col-md-6 contact-form p-5">
+                            <h4 class="heading">The Situation where Traffic Safety Is Urgently Needed</h4>
+                            <video controls="controls" width="300" height="200">
+                                <source src="Chisom/sm4.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--<div class="row about_grids" id="VM">
+                <h1>The Following videos contains the traffic safety measures in Nigeria</h1>
+                <div class="col-lg-4 col-md-6 team_grid1">
+
+
+                </div>
+                <div class="col-lg-4 col-md-6 team_grid1">
+
+                </div>
+                <div class="col-lg-4 col-md-6 team_grid1" width="300" height="200">
+                    <video controls="controls">
+                        <source src="Chisom/sm4.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>-->
+
+        </div>
+    </section>
+    <!-- //About -->
+
+    <section class="gallery agile py-5" id="TRR">
+        <div class="container-fluid py-lg-5">
+            <div class="agile_gallery_grids row w3-agile">
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-sm-5 mb-3 team_grid1">
+                    <h1 class="heading text-uppercase">Traffic Rules and Regulations</h1>
+
+
+                    <p>Fatalities and accidents on the road occur because someone somewhere is not paying attention to road safety rules.</p>
+                    <p class="second_para">
+                        There are a number of factors that come into interplay while traveling on the road.
+                        There are road safety rules for drivers to follow as well as the pedestrians and other vehicles.
+                        Road signs are symbols which help road users gain full information about road the in other to avoid accidents.
+                    </p>
+                </div>
+                <ul class="clearfix demo col-lg-8 co-12">
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="Peter/hqdefault.jpg" alt="Traffic rules" class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Rules and manner for cars</h4>
+                                <p>Understand and follow the road signs.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+
+                            <img src="Peter/ph_02_01.jpg" alt="Maintain Pedestrian " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Pedestrians Crossing</h4>
+                                <p>Keep a safe distance or drive slowly when passing pedestrians or bicycles.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+
+                            <img src="Peter/ph_02_02.jpg" alt="mobile phone " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Using Mobile-Phone</h4>
+                                <p>The use of mobile phones while driving is prohibited</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+
+                            <img src="Peter/ph_02_03.jpg" alt=" Speed Limit" class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Speed Limit</h4>
+                                <p>Remain within the speed limit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+
+                            <img src="Peter/ph_02_04.jpg" alt="Pedestrian Crossing " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Pedestrian Crossing</h4>
+                                <p>Looking both ways to check that it is safe.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+
+                            <img src="Peter/ph_02_05.jpg" alt="handlers " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Grip Handlebars</h4>
+                                <p>Dangerous to hold other objects while riding.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+
+                            <img src="Peter/ph_02_06.jpg" alt="Snow riding " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Snow Roads</h4>
+                                <p>Its dangerous to ride on snow roads.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <!--<section class="contact py-5">
+                    <div class="container-fluid pt-lg-5">
+                        <div class="row contact-grids">
+                            <div class="col-lg-4 col-12 mb-lg-0 mb-sm-4 mb-3 team_grid1">
+                                <h1 class="heading text-uppercase">Contact Us</h1>
+                                <p>vel tincidunt justo leo eget ex Nam vel feugiat aliquam, vel tincidunt justo facilisis. Nunc Nam vel feugiat</p>
+                                <p class="second_para">
+                                    Vestibulum venenatis leo eget ex aliquam, vel tincidunt justo facilisis. Nunc
+                                    egestas lacus in velit aliquam, sed rutrum ex tempor. Nam vel feugiat odio. Pellentesque efficitur dapibus augue.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 contact-form p-5">
+                                <h4 class="heading">send us a message</h4>
+                                <form action="#" method="post">
+                                    <input type="text" placeholder="Full Name" required="" />
+                                    <input type="email" placeholder="Your Mail" required="" />
+                                    <input type="text" placeholder="Mobile Number" required="" />
+                                    <textarea placeholder="Message" required=""></textarea>
+                                    <div class="submit1">
+                                        <input type="submit" value="sent">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-md-0 mt-4 map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.10803373056!2d2.2074740643680624!3d48.85877410312378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!5e0!3m2!1sen!2sin!4v1488168816174"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+                <!--<div class="col-lg-4 col-12 mt-lg-0 mt-5 team_grid1">
+
+
+                            <h3 class="heading text-uppercase">Traffic Signs</h3>
+                            <p class="second_para">
+                                <div class="gallery-grid1">
+
+                                    <img src="Peter/ph_02_06.jpg" alt="Snow riding " class="img-fluid" />
+                                    <div class="p-mask">
+                                        <h4>Snow Roads</h4>
+                            <p>Its dangerous to ride on snow roads.</p>
+                        </div>
+                    </div>
+                    <p>
+                        <img src="Peter/banner.jpg" alt="Traffic signs">
+                    </p>
+                    <p>Road signs are symbols which help road users gain full information about road the in other to avoid accidents. These signs are grouped into:</p>
+
+                    <p>
+                        <ol>
+                            <li><b>Regulatory signs:</b> These are signs that appear often in circular shapes. They are divided into:</li>
+                            <ul>
+                                <li><b>Mandatory regulatory signs:</b> Mandatory regulatory signs appear with blue circles but without red border such as diversion signs , roundabout sign etc.</li>
+                                <li><b>Prohibitive Regulatory signs:</b> They are signs with red and yellow circles. They are Stop sign, No light sign etc.The  colour red for regulatory signs as a background colour is used to denote restriction.</li>
+                    <p>
+                        <img src="Peter/7K0Dyni.jpg" alt="regulatory signs">
+                    </p>
+                    </ul>
+
+                    <li><b>Informative Signs:</b> They are provided to give required information to road users.</li>
+                    <p>
+                        <img src="Peter/informative-signages.jpg" alt="informative signs">
+                    </p>
+                    </ol>
+                    </p>
+                    </p>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <!--<section class="services Peter" id="#TRR">
+        <div class="service-overlay py-5">
+            <div class="container-fluid py-lg-5 py-3">
+                <div class="row service_grids">
+                    <div class="col-lg-2 col-md-3 mb-lg-0 mb-5 ser_grid1 icon1">
+                        <span class="fab fa-forumbee"></span>
+                        <h3>Traffic Rules and Regulations</h3>
+
+
+                        <p>
+                        <p>Fatalities and accidents on the road occur because someone somewhere is not paying attention to road safety rules. There are a number of factors that come into interplay while traveling on the road. There are road safety rules for drivers to follow as well as the pedestrians and other vehicles.</p>
+
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 mb-lg-0 mb-5 ser_grid1 icon2">
+                        <span class="fab fa-foursquare"></span>
+                        <h3>Service Two</h3>
+                        <p>
+
+                            <img src="Peter/hqdefault.jpg" alt="Traffic rules" />
+                        </p>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 mb-lg-0 mb-5 ser_grid1 icon3">
+                        <span class="fab fa-first-order"></span>
+                        <h3><b>Road safety </b></h3>
+                        <ul>
+                            <li><b>Keep to the left</b> </li>
+                            <li><b>Slow done on bends and turn</b></li>
+                            <li><b>Move cautiously and slowly during congestion on roads</b></li>
+                            <li><b>Remain within the speed limit</b></li>
+                            <li><b>Maintain the right distance</b></li>
+                            <li><b>Understand and follow the road signs</b></li>
+                            <li><b>The use of mobile phones while driving is prohibited</b></li>
+                            <li><b>Do not perform reckless overtaking or turning maneuvers</b></li>
+                            <li><b>Keep a safe distance or drive slowly when passing pedestrians or bicycles</b></li>
+                            <li><b>Follow instructions from police officers</b></li>
+                        </ul>
+                        <h3>Service Three</h3>
+
+                        <p>
+                            <img src="Peter/ph_02_04.jpg" alt="Traffic signs" style="width:200px;height:150px">
+                        </p>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 ser_grid1 icon4">
+                        <span class="fab fa-freebsd"></span>
+                        <h3><b>Road safety rules and manner for pedestrians</b></h3>
+
+                        <h3>Road safety rules and manner for pedestrians</h3>
+                        <p>
+                            <ul>
+                                <li><b>Use the sidewalk whenever one is available</b></li>
+                                <li><b>Keep to the right on roads without sidewalks</b></li>
+                                <li><b>Use a pedestrian crossing whenever one is available</b></li>
+                                <li><b>Be sure to observe pedestrian traffic lights</b></li>
+                                <li><b>Before crossing at a pedestrian or railroad crossing, look both ways to check that it is safe</b></li>
+                                <li><b>At night, wear a reflector or brightly colored clothes that are easily visible to drivers</b></li>
+                            </ul>
+                        </p>
+                        <p>
+                            <img src="Peter/ph_02_05.jpg" alt="Traffic signs" style="width:200px;height:150px">
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4 col-12 mt-lg-0 mt-5 team_grid1">
+                        <H2><b>Traffic signs</b></H2>
+
+                        <h3 class="heading text-uppercase">Traffic Signs</h3>
+                        <p class="second_para">
+                        <p>
+                            <img src="Peter/banner.jpg" alt="Traffic signs">
+                        </p>
+                        <p>Road signs are symbols which help road users gain full information about road the in other to avoid accidents. These signs are grouped into:</p>
+
+                        <p>
+                            <ol>
+                                <li><b>Regulatory signs:</b> These are signs that appear often in circular shapes. They are divided into:</li>
+                                <ul>
+                                    <li><b>Mandatory regulatory signs:</b> Mandatory regulatory signs appear with blue circles but without red border such as diversion signs , roundabout sign etc.</li>
+                                    <li><b>Prohibitive Regulatory signs:</b> They are signs with red and yellow circles. They are Stop sign, No light sign etc.The  colour red for regulatory signs as a background colour is used to denote restriction.</li>
+                        <p>
+                            <img src="Peter/7K0Dyni.jpg" alt="regulatory signs">
+                        </p>
+                        </ul>
+
+                        <li><b>Informative Signs:</b> They are provided to give required information to road users.</li>
+                        <p>
+                            <img src="Peter/informative-signages.jpg" alt="informative signs">
+                        </p>
+                        </ol>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- //services -->
+    <!-- Team -->
+    <!--<div class="ibukun">
+    <h1>TRAFFIC REPORT</h1>
+    <div>
+        <ul>
+            <p>
+            <li>
+                From Ojota to Maryland is Blocked Ojota to Maryland
+                and beyond is locked down #Lagos </p>
+                <p>
+                    <img src="UTP1.png" height="380" width="540" alt="traffic report" />
+            </li>
+            </p>
+
+            <p style="padding-top: 30px;">
+            <li>
+                From Berger (Ori Oke) to Kara is Moving
+                Steady flow out of #Lagos
+            </li>
+            </p>
+            <p style="padding-right:40px;"> <img src="UTP2.jpg" height="380" width="540" alt="traffic report" /> </p>
+
+            <p style="padding-top:30px; ">
+            <li>
+                From 7up to ileepo(Capital)is very slow at the moment #Lagos>
+                </p>
+                <img src="UTF3.jpg" height="380" width="540" alt="traffic report" />
+            </li>
+
+            <p style="padding-top:30px;">
+            <li>
+                From Berger to Opic is moving steady flow of vehicles heading out </p>
+                <p> <img src="UTP4.jpg" height="380" width="540" alt="traffic report" />
+            </li></p>
+
+            <p style="padding-top:30px">
+            <li>
+                Third Mainland Bridge to Adeniji (SLOW traffic)moving steady flow of vehicles
+                heading out</p>
+                <p>
+                    <video src="mainland.mp4"
+                           controls="controls"></video>
+                </p>
+                <p style="padding-top:30px;">
+            <li>
+                A police inspector attached to the Federal Special Anti-Robbery Squad (FSARS), Ikeja on Wednesday allegedly shot dead an official with the Lagos State Transport Management Authority (LASTMA) while controlling traffic.
+                Sources told the News Agency of Nigeria (NAN) that the LASTMA official, named Adeyemo Rotimi, was shot dead at Iyana Ipaja area of Lagos.</p>
+                <p>
+                    NAN gathered that the LASTMA official was shot dead when he challenged the policeman, identified as Joseph Oki, for disobeying traffic rules.
+                    NAN learnt that the victim, popularly known as ‘Baba Ibeji’, had stopped the police inspector who was driving a cream coloured Toyota Highlander with registration number plate LSR 277 BJ to allow free flow of traffic.
+                </p>
+                <p>It was gathered that the LASTMA official reportedly scolded the policeman for flouting traffic rules.</p>
+                <p>
+                    According to sources, the policeman, who felt insulted by Adeyemo’s warning, allegedly pulled a pistol and shot the LASTMA official in the eye, killing him on the spot.
+                    NAN learnt that the policeman attempted to flee the scene but was stopped by the mob.
+                </p>
+                <P>
+                    that some policemen in the area reportedly rescued the FSARS officer from the angry crowd who also damaged his vehicle.
+                    Contacted, spokesman for the Lagos State Police Command, CSP Chike Oti, did not deny the incident.
+                </P>
+                <p style="quotes: ">“I am writing a release on the incident,” Oti said.
+            </li>
+            <p> <img src="UTP9.jpg" height="380" width="540" alt="traffic report" /></p>
+
+            <p style="padding-top:30px">
+            <li>
+                Tips on how to beat lagos traffic using one of the finest traffic apps there is</p
+                <p>
+                    <video src="How to Beat Lagos Traffic.mp4"
+                           controls="controls" width="400" height="400"></video>
+                </p>
+
+    </div>
+
+        <div class="col-lg-2 col-md-3 col-6 mb-md-0 mb-5 w3l_team_grid">
+            <div class="view view-second">
+                <img src="images/t1.jpg" alt=" " class="img-fluid" />
+            </div>
+            <h4 class="my-2">Alexander</h4>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mb-md-0 mb-5 w3l_team_grid">
+            <div class="view view-second">
+                <img src="images/t2.jpg" alt=" " class="img-fluid" />
+            </div>
+            <h4 class="my-2">David Richard</h4>
+            <p>Co-founder</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 w3l_team_grid">
+            <div class="view view-second">
+                <img src="images/t3.jpg" alt=" " class="img-fluid" />
+            </div>
+            <h4 class="my-2">Michael Doe</h4>
+            <p>General Manager</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 w3l_team_grid">
+            <div class="view view-second">
+                <img src="images/t4.jpg" alt=" " class="img-fluid" />
+            </div>
+            <h4 class="my-2">Thomas Ridge</h4>
+            <p>Assistant Manager</p>
+        </div>-->
+    <section class="contact py-5" id="TR">
+        <div class="container-fluid pt-lg-5">
+            <h1 class="heading text-uppercase">TRAFFIC REPORT</h1>
+
+            <div  ng-controller="personCtrl">
+                <ul>
+                    <li ng-repeat="x in myReport">
+                        {{ x.location + ', ' + x.Date+ ', ' + x.Time+ ', ' + x.Description }}
+                    </li>
+                </ul>
+
+            </div>
+            <script src="Reports.js"></script>
+
+            <div class="row contact-grids">
+                <div class="col-lg-4 col-12 mb-lg-0 mb-sm-4 mb-3 team_grid1">
+
+                    <p style="padding-top:30px;">
+                        <li>
+                            A police inspector attached to the Federal Special Anti-Robbery Squad (FSARS), Ikeja on Wednesday allegedly shot dead an official with the Lagos State Transport Management Authority (LASTMA) while controlling traffic.
+                            Sources told the News Agency of Nigeria (NAN) that the LASTMA official, named Adeyemo Rotimi, was shot dead at Iyana Ipaja area of Lagos.
+                    </p>
+                    <p>
+                        NAN gathered that the LASTMA official was shot dead when he challenged the policeman, identified as Joseph Oki, for disobeying traffic rules.
+                        NAN learnt that the victim, popularly known as ‘Baba Ibeji’, had stopped the police inspector who was driving a cream coloured Toyota Highlander with registration number plate LSR 277 BJ to allow free flow of traffic.
+                    </p>
+                    <p>It was gathered that the LASTMA official reportedly scolded the policeman for flouting traffic rules.</p>
+                    <p>
+
+                    </p>
+                    <P>
+                        that some policemen in the area reportedly rescued the FSARS officer from the angry crowd who also damaged his vehicle.
+                        Contacted, spokesman for the Lagos State Police Command, CSP Chike Oti, did not deny the incident.
+                    </P>
+                    <p style="quotes: ">
+                        “I am writing a release on the incident,” Oti said.
+                        </li>
+                    <p> <img src="UTP9.jpg" height="380" width="540" alt="traffic report" /></p>
+
+                    <p style="padding-top:30px">
+                        <li>
+                            Tips on how to beat lagos traffic using one of the finest traffic apps there is
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 contact-form p-5">
+                <h4 class="heading">Useful Links</h4>
+
+                <p>There are certain ways to reduce traffic congestion at a very high rate:</p>
+                <ul>
+                    <li>Widen roads</li>
+
+                    <li>Narrow roads</li>
+
+                    <li>Add bus lanes</li>
+
+                    <li>Build tunnels</li>
+
+                    <li>Build a new ring road</li>
+
+                    <li>Build a light rail network</li>
+
+                    <li>Swithc off traffic lights</li>
+
+                    <li>Ban cycling</li>
+
+                    <li>Ban cars from city centres</li>
+
+                    <li>Close through-routes to private vehicles</li>
+
+                    <li>Close car parks</li>
+
+                    <li>Build more car parks</li>
+
+                    <li>Make buses free</li>
+
+                    <li>Make park and ride free</li>
+
+                    <li>Introduce a congestion charge/road pricing</li>
+                </ul>
+            </div>
+        </div>
+                            <div class="col-lg-4 col-md-6 mt-md-0 mt-4 map">
+                                <h3 class="heading text-uppercase">Traffic Blockage Information</h3>
+                    <p>
+                        <video width="352" height="240" controls>
+                            <source src="Third Mainland Bridge to Adeniji (SLOW traffic).mp4" type="video/mp4">
+                        </video>
+
+                    </p> <p class="second_para">
+                        Traffic blockage also known as traffic jam/traffic congestion is a condition on transport networks that occurs as use increases, and is characterized by slower speeds, longer trip and times, and increased vehicular queuing. When traffic demand is great enough that the interaction between vehicles slows the speed of the traffic stream, this results in some congestion. While congestion is a possibility for any mode of transportation, this article will focus on automobile congestion on public roads.
+                        <img src="traffic/Nigeria-Road-Safety.jpg" alt="image" style="width:277px;height:182px">
+                    </p>
+
+                    <p class="second_para">
+                        Roads are the most popular mode of transport for Lagos’ reported <b>21 million residents.</b> The state lags behind major cities in utilizing efficient public transport systems; rail, <b>urban</b> capacity buses and <b>water transportation</b> are relatively underdeveloped in the city, making roads the go-to form of mobility.
+                    </p> </div>
+                        </div>
+                    </div>
+                </section>
+    
+
+    <section class="team py-5 my-lg-5 my-3" id="TBI">
+        <div class="container-fluid ">
+            <div class="row team_grids">
+                <div class="col-lg-4 col-12 mb-lg-0 mb-4 team_grid1">
+
+                    <p class="second_para">
+                        With a land mass of about 3600 square kilometers, Lagos is the smallest state in Nigeria, representing just 0.4% of the entire country. However, over <b>8 million people</b> travel to work each day on the 9,100 roads and expressways available in Lagos. These figures depict congestion as Lagos has too many people and <b>too few roads.</b>
+                    </p>
+
+                    <h1><b>Causes of traffic congestion</b></h1>
+
+
+                    <p>
+                        <img src="traffic/images.jpg" alt="image" style="width:277px;height:182px">
+                    </p>
+                    <div class="col-lg-2 col-sm-3 mb-sm-0 mb-4 px-sm-0 px-4 w3_agile-footer1 f1">
+                        <h5 class="mb-3">Useful Links </h5>
+                        <ul class="w3ls-footer-bottom-list">
+                            <li>Too many cars for the roadway due to inadequate mass transit options or other reasons.</li>
+
+                            <li>Obtacles in the road causing a blockage and merger. These can be any of the following: Double parking, Road work, Lane closure due to utility work, Road narrowing down, An accident.</li>
+
+                            <li>Traffic signals out of sync many times on purpose or occasionally when the computers are malfunctioning.</li>
+
+                            <li>Inadequate greem time.</li>
+
+                            <li>Too many pedestrians crossing not permitting cars to turn.</li>
+
+                            <li>Too many trucks on the road due to inadequate rail freight opportunities.</li>
+
+                            <li>Overdevelopment in areas where the mass transist system is already overcrowded and the road system is inadequate.</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 mb-sm-0 mb-4 px-sm-0 px-4 w3_agile-footer1 f1">
+
+                        <ul></ul>
+
+
+                        <p>None of this can deliver a complete solution, and most of them provide only temporary relief until induced demand fills up the road space one more.</p>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- //Team -->
+    <!-- Testimonials -->
+    <!--<!--<!--<section class="testimonials py-5">
+        <div class="container-fluid py-lg-5">
+            <div class="row test-grids">
+                <!-- testimonials -->
+    <!--<div class=" col-lg-8 clients">
+        <div class="sreen-gallery-cursual">
+            <div id="owl-demo" class="owl-carousel">
+                <div class="item-owl">
+                    <div class="test-image">
+                        <img src="images/test1.jpg" alt=" " class="img-fluid">
+                    </div>
+                    <div class="test-review">
+                        <h5>Henry mark</h5>
+                        <p> <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Polite sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore etdolorema gnaaliquya merat, sed diam voluptua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minimveniam, quis nostrud exercitation ullamco<span><i class="fa fa-quote-right" aria-hidden="true"></i></span></p>
+                        <p class="date">2 days ago</p>
+                    </div>
+                </div>
+                <div class="item-owl">
+                    <div class="test-image">
+                        <img src="images/test2.jpg" alt=" " class="img-fluid">
+                    </div>
+                    <div class="test-review">
+                        <h5>Smith joe</h5>
+                        <p> <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Polite sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloremagna aliquyam erat, sed diam voluptua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minimveniam, quis nostrud exercitation ullamco<span><i class="fa fa-quote-right" aria-hidden="true"></i></span></p>
+                        <p class="date">4 days ago</p>
+                    </div>
+                </div>
+                <div class="item-owl">
+                    <div class="test-image">
+                        <img src="images/test3.jpg" alt=" " class="img-fluid">
+                    </div>
+                    <div class="test-review">
+                        <h5>Steave john</h5>
+                        <p> <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Polite sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloremagna aliquyam erat, sed diam voluptua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenimad minimveniam, quis nostrud exercitation ullamco<span><i class="fa fa-quote-right" aria-hidden="true"></i></span></p>
+                        <p class="date">1 day ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        //screen-gallery
+
+    </div>-->
+    <!-- //testimonials -->
+    <!--<div class="col-lg-4 mt-md-0 mt-5 team_grid1">
+                    <h3 class="heading text-uppercase">Testimonials</h3>
+                    <p>vel tincidunt justo leo eget ex Nam vel feugiat aliquam, vel tincidunt justo facilisis. Nunc Nam vel feugiat</p>
+                    <p class="second_para">
+                        Vestibulum venenatis leo eget ex aliquam, vel tincidunt justo facilisis. Nunc
+                        egestas lacus in velit aliquam, sed rutrum ex tempor. Nam vel feugiat odio. Pellentesque efficitur dapibus augue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>--->
+    <!-- Buy Traffic Safety Merchandise  -->
+    <section class="gallery agile py-5" id="BTSM">
+        <div class="container-fluid py-lg-5">
+            <div class="agile_gallery_grids row w3-agile">
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-sm-5 mb-3 team_grid1">
+                    <h1 class="heading text-uppercase">Buy Traffic Safety Measures</h1>
+                    <p><b>Road safety measures</b>refers to the methods and measures used to prevent road users from being killed or seriously injured. Typical road users include:<p style="font-family:verdana;">pedestrians, cyclist, motorist, vehicle passengers, horse-riders and passengers off on-road public transport</p>(mainly buses and trams)</p>
+                    <p class="second_para">
+                        Keeping your kids safe at all times can be tricky when you cannot be with them always.
+                        Below are a few tips on how to keep your kids safe on the road.
+                    </p>
+
+                </div>
+                <ul class="clearfix demo col-lg-8 co-12">
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v1.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v2.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v3.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v4.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v5.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v6.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v7.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v8.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v10.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v9.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v12.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gallery-grid1">
+                            <img src="images/v11.jpg" alt=" " class="img-fluid" />
+                            <div class="p-mask">
+                                <h4>Corp Active</h4>
+                                <p>Neque porro quisquam est.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="fa-location-arrow py-5">
+        <div class="container-fluid pt-lg-5">
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.10803373056!2d2.2074740643680624!3d48.85877410312378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!5e0!3m2!1sen!2sin!4v1488168816174"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <!-- // Buy Traffic Safety Merchandise  -->
+    <!-- Testimonials -->
+    <!-- Partners -->
+    <!--<section class="partners py-5">
+        <div class="container">
+            <div class="row partner-grids text-center">
+                <div class="col-sm-2 col-4">
+                    <a href="#"><i class="fab fa-angrycreative"></i></a>
+                </div>
+                <div class="col-sm-2 col-4">
+                    <a href="#"><i class="fab fa-apper"></i></a>
+                </div>
+                <div class="col-sm-2 col-4">
+                    <a href="#"><i class="fab fa-apple-pay"></i></a>
+                </div>
+                <div class="col-sm-2 col-4">
+                    <a href="#"><i class="fab fa-aviato"></i></a>
+                </div>
+                <div class="col-sm-2 col-4">
+                    <a href="#"><i class="fab fa-aws"></i></a>
+                </div>
+                <div class="col-sm-2 col-4">
+                    <a href="#"><i class="fab fa-amazon-pay"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- //Partners -->
+    <!-- footer -->
+    <section class="agile-footer middle w3ls-section">
+        <div class="container">
+            <div class="agileits_w3layouts-footer-bottom">
+                <div class="row w3_agile-footer-grids py-5">
+                    <!--<div class="col-lg-2 col-sm-3 mb-sm-0 mb-4 px-sm-0 px-4 w3_agile-footer1 f1">
+                        <h5 class="mb-3">Useful Links </h5>
+                        <ul class="w3ls-footer-bottom-list">
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="#">Team members</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 col-sm-9 mb-sm-0 mb-4 px-sm-0 px-4 row w3_agile-footer1 f2">
+                        <div class="col-lg-3 col-sm-3  mb-sm-0 mb-4 inner-li">
+                            <h5 class="mb-3">Account</h5>
+                            <ul class="w3ls-footer-bottom-list">
+                                <li><a href="#" data-toggle="modal" aria-pressed="false" data-target="#exampleModal">Login</a></li>
+                                <li><a href="#" data-toggle="modal" aria-pressed="false" data-target="#exampleModal1">Create account</a></li>
+                            </ul>
+                        </div>-->
+
+                    <div class="col-lg-6 col-sm-7  mb-sm-0 mb-4 inner-li">
+                        <h5 class="mb-3">Address</h5>
+                        <ul class="w3ls-footer-bottom-list">
+                            <p>
+                            <li> <span class="fas fa-map-marker"></span> 332, Ikordu Road, Capital Buiding, <span> By Idiroko Bus stop, Maryland, Lagos </span></li></p>
+                            <li> <span class="fas fa-envelope"></span> <a href="mailto:maryland@meridian-nigeria.com"> maryland@meridian-nigeria.com</a> </li>
+                            <li> <span class="fas fa-phone"></span> +234 701 119 1574</li>
+                            <!-- <li> <span class="fas fa-globe"></span> <a href="#"> www.website.com</a> </li> -->
+                            <li> <span class="fas fa-clock"></span> Working Hours : 8:00 a.m - 6:00 p.m</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-2 inner-li">
+                        <h5 class="mb-3">support</h5>
+                        <ul class="w3ls-footer-bottom-list">
+                            <li>
+                                <a href="#">24/7 Service</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ's</a>
+                            </li>
+                            <li>
+                                <a href="#">Media Queries</a>
+                            </li>
+                            <li>
+                                <a href="#">Others</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-3 col-md-12 px-sm-0 px-4 w3_agile-footer1 f3">
+                    <h5 class="mb-3">Latest Tweets</h5>
+                    <ul class="tweet-agile">
+                        <li>
+                            <p class="tweet-p1"><span class="fab fa-twitter" aria-hidden="true"></span><a href="mailto:support@company.com">@ripstick</a> What is the quickest route to surulere from ikeja. <a href="#">http://ax.by/zzzz</a></p>
+                            <p class="tweet-p2">Posted 2 days ago.</p>
+                        </li>
+                        <li>
+                            <p class="tweet-p1"><span class="fab fa-twitter" aria-hidden="true"></span><a href="mailto:support@company.com">@Iamyourdaddy</a> Traffic is really tiring. <a href="#">http://cx.dy/zzzz</a></p>
+                            <p class="tweet-p2">Posted 4 days ago.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="copyright py-4">
+        <div class="agileits_w3layouts-copyright text-center">
+            <p>
+                © 2019 Urban Traffic Portal. All Rights Reserved | Design by
+
+            </p>
+        </div>
+    </section>
+    <!-- //footer -->
+    <!-- Login modal -->
+    <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="exampleModalLabel1">WELCOME !!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                        <div class="form-group" ng-app="" ng-model="firstname">
+                            <label for="recipient-name" class="col-form-label">Kindly Enter Your First Name Below</label>
+                            <input type="text" class="form-control" placeholder="Enter Firstname" name="Name" >
+                        </div>
+
+                        <div class="right-w3l mt-4 mb-3">
+                            <input type="button" class="form-control btn btn-warning" value="OK">
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- //Login modal -->
+    <!-- js-scripts -->
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+    <!-- //js -->
+    <!-- Banner Slider js script file-->
+    <script src="js/JiSlider.js"></script>
+    <script>
+        $(window).load(function () {
+            $('#JiSlider').JiSlider({
+                color: '#fff',
+                start: 1,
+                reverse: false
+            }).addClass('ff')
+        })
+    </script>
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- //Banner Slider js script file-->
+    <!-- tabs -->
+    <script src="js/easy-responsive-tabs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true,   // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+            $('#verticalTab').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <!--//tabs-->
+    <!-- for-Testimonials -->
+    <!-- required-js-files-->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 1,
+                lazyLoad: true,
+                autoPlay: true,
+                navigation: false,
+                navigationText: false,
+                pagination: true,
+            });
+        });
+    </script>
+    <!--//required-js-files-->
+    <!-- //for-Testimonials -->
+    <!-- start-smoth-scrolling -->
+    <script src="js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <!-- start-smoth-scrolling -->
+    <script>
+        $(document).ready(function () {
+
+            $("#exampleModal").modal();
+            
+
+
+        });
+    </script>
+    <!-- //js-scripts -->
+
+</body>
+</html>

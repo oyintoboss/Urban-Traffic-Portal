@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <title>Welcome</title>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <h2>Welcome to angularJS Test Page</h2> <br />
+    <h3>Addition</h3> {{10+10}} <br />
+    <h3>Subtraction</h3> {{30-10}} <br />
+    <h3>Multiplication</h3> {{5*4}} <br />
+    <h3>Division</h3> {{100/5}} <br />
+
+    Name: <input ng-click="myFunction">
+    <h1>You entered: {{name}}</h1>
+   
+
+    <!--<button ng-click="myFunction()">Click Me!</button>-->
+
+    <p>{{ count }}</p>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.count = 0;
+            $scope.myFunction = function () {
+                $scope.name;
+                $scope.count++;
+            }
+        });
+    </script>
+
+</body>
+</html>
